@@ -1,0 +1,238 @@
+﻿.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    font-family: Impact, sans-serif;
+    background-color: white;
+}
+
+.left img.schriftzug {
+    height: 40px; /* je nach Bildgröße anpassen */
+    margin-right: 10px;
+}
+
+.wappen {
+    height: 70px; /* oder 80px – einfach ausprobieren */
+}
+
+.trennlinie {
+    border-top: 2px solid black;
+    margin: 0 40px;
+}
+.content-center {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+    .section-title hr {
+        border: none;
+        border-top: 2px solid black;
+        width: 50%;
+        margin: 10px auto;
+    }
+
+.flyer {
+    max-width: 80%;
+    height: auto;
+    margin: 20px 0;
+}
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: -15px; /* hebt die Buttons auf die Linie */
+    position: relative;
+    z-index: 10;
+}
+
+.nav-button {
+    font-family: 'Arial Black', sans-serif;
+    background-color: white;
+    border: 2px solid black;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    position: relative;
+    top: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+    .nav-button:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+.Logo {
+    max-width: 300px; /* oder kleiner, z. B. 200px */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* zentriert und Abstand */
+}
+.ueberuns-wrapper {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.ueberuns-header {
+    margin-bottom: 40px;
+}
+
+    .ueberuns-header .linie {
+        border: none;
+        border-top: 1.5px solid black;
+        width: 120px;
+        margin: 10px auto;
+    }
+
+.ueberuns-wrapper h2 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+.ueberuns-wrapper h3 {
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.ueberuns-wrapper p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+.nav-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    font-family: 'Arial Black', sans-serif;
+    background-color: white;
+    border: 2px solid black;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 2px solid black;
+    min-width: 200px;
+    z-index: 20;
+}
+
+    .dropdown-content a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+    }
+
+        .dropdown-content a:hover {
+            background-color: black;
+            color: white;
+        }
+
+.nav-dropdown:hover .dropdown-content {
+    display: block;
+}
+.bilder-galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+    .bilder-galerie img {
+        width: 200px; /* kleiner Vorschau */
+        height: auto;
+        border: 2px solid black;
+        transition: transform 0.2s;
+        cursor: pointer;
+    }
+
+        .bilder-galerie img:hover {
+            transform: scale(1.05); /* kleiner Zoom-Effekt beim Drüberfahren */
+        }
+.bilder-galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px auto;
+}
+
+    .bilder-galerie img {
+        width: 200px;
+        height: auto;
+        border: 2px solid black;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+
+        .bilder-galerie img:hover {
+            transform: scale(1.05);
+        }
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    .lightbox img {
+        max-width: 90%;
+        max-height: 80vh;
+        border: 4px solid white;
+    }
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}

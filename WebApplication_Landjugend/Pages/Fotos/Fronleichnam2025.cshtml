@@ -1,0 +1,22 @@
+﻿@page
+@model WebApplication_Landjugend.Pages.Fotos.Fronleichnam2025Model
+@{
+    ViewData["Title"] = "Fronleichnam 2025";
+}
+
+
+<h2>Fronleichnam 2025</h2>
+
+<div class="bilder-galerie">
+    <img src="/images/Fronleichnam2025/fronleichnam2025_1.jpg" alt="Bild 1" onclick="openLightbox(0)" />
+    <img src="/images/Fronleichnam2025/fronleichnam2025_2.jpg" alt="Bild 2" onclick="openLightbox(1)" />
+    <img src="/images/Fronleichnam2025/fronleichnam2025_3.jpg" alt="Bild 3" onclick="openLightbox(2)" />
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close-btn">&times;</span>
+    <img id="lightbox-img" />
+    <button class="nav-btn prev" onclick="event.stopPropagation(); navigate(-1);">&#10094;</button>
+    <button class="nav-btn next" onclick="event.stopPropagation(); navigate(1);">&#10095;</button>
+</div>

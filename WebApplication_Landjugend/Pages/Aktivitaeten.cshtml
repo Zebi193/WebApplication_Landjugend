@@ -1,0 +1,21 @@
+﻿@page
+@model WebApplication_Landjugend.Pages.AktivitaetenModel
+@{
+    ViewData["Title"] = "Aktivitäten";
+}
+
+<div class="content-center">
+    <div class="section-title">
+        <hr />
+        <h2>Sommerfest</h2>
+        <hr />
+    </div>
+
+    <p>Hier findest du unseren aktuellen Flyer:</p>
+
+    <!-- Wenn der Flyer ein Bild ist -->
+    <img src="/images/sommerfest.png" alt="Flyer Sommerfest" class="flyer" />
+
+    <!-- Oder als PDF zum Download -->
+    <p><a href="/docs/sommerfest.pdf" target="_blank">📄 Flyer als PDF anzeigen</a></p>
+</div>

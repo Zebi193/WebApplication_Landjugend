@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - Landjugend Aichen</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header class="topbar">
+        <div class="left">
+            <a href="/" class="logo-link">
+                <img src="/images/landjugend.jpg" alt="Landjugend" class="schriftzug" />
+                <img src="/images/aichen.jpg" alt="Aichen" class="schriftzug" />
+            </a>
+        </div>
+
+        <div class="right">
+            <img src="/images/logo.PNG" alt="Wappen" class="wappen" />
+        </div>
+    </header>
+
+    <hr class="trennlinie" />
+    <div class="nav-bar">
+        <a href="/Aktivitaeten" class="nav-button">Aktivitäten</a>
+        <div class="nav-dropdown">
+            <button class="nav-button dropdown-toggle">Fotos</button>
+            <div class="dropdown-content">
+                <a href="/Fotos/Fronleichnam2025">Fronleichnam 2025</a>
+                <!-- Weitere Alben folgen -->
+            </div>
+        </div>
+        <a href="/Geschichte" class="nav-button">Geschichte</a>
+        <a href="/UeberUns" class="nav-button">Über Uns</a>
+    </div>
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+    <footer class="border-top text-muted text-center py-3">
+        © 2025 – Landjugend Aichen
+    </footer>
+</body>
+</html>
+<script src="~/js/site.js"></script>
