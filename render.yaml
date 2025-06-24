@@ -1,10 +1,9 @@
 services:
   - type: web
     name: landjugend-web
-    runtime: dotnet
-    buildCommand: dotnet publish -c Release -o out
-    startCommand: dotnet WebApplication_Landjugend.dll
-    staticPublishPath: out/wwwroot
-    env: 
+    runtime: docker
+    dockerfilePath: Dockerfile
+    region: frankfurt
+    env:
       - key: ASPNETCORE_ENVIRONMENT
         value: Production
